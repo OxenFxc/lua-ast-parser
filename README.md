@@ -1,7 +1,7 @@
 # 🚀 LuaAstParser
 
-[![GitHub stars](https://img.shields.io/github/stars/OxenFxc/LuaAstParser?style=social)](https://github.com/OxenFxc/LuaAstParser)
-[![GitHub forks](https://img.shields.io/github/forks/OxenFxc/LuaAstParser?style=social)](https://github.com/OxenFxc/LuaAstParser)
+[![GitHub stars](https://img.shields.io/github/stars/OxenFxc/lua-ast-parser?style=social)](https://github.com/OxenFxc/lua-ast-parser)
+[![GitHub forks](https://img.shields.io/github/forks/OxenFxc/lua-ast-parser?style=social)](https://github.com/OxenFxc/lua-ast-parser)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Lua Version](https://img.shields.io/badge/Lua-5.1%2B-blue.svg)](https://www.lua.org/)
 
@@ -169,14 +169,14 @@ end
 
 欢迎贡献代码！请查看我们的贡献指南：
 
-- 🐛 [报告问题](https://github.com/OxenFxc/LuaAstParser/issues)
-- 💡 [提出建议](https://github.com/OxenFxc/LuaAstParser/discussions)
-- 🔧 [提交PR](https://github.com/OxenFxc/LuaAstParser/pulls)
+- 🐛 [报告问题](https://github.com/OxenFxc/lua-ast-parser/issues)
+- 💡 [提出建议](https://github.com/OxenFxc/lua-ast-parser/discussions)
+- 🔧 [提交PR](https://github.com/OxenFxc/lua-ast-parser/pulls)
 
 ### 📞 联系我们
 
 - 🏠 [GitHub主页](https://github.com/OxenFxc)
-- 📧 [作者主页](https://github.com/OxenFxc/LuaAstParser)
+- 📧 [作者主页](https://github.com/OxenFxc/lua-ast-parser)
 - 🎯 QQ: 1434436108 | 2707271920
 - 💬 WeChat: ofxfxc
 
@@ -190,7 +190,7 @@ end
 
 **🌟 如果这个项目对你有帮助，请给它一个 ⭐ Star！**
 
-[![Star History Chart](https://api.star-history.com/svg?repos=OxenFxc/LuaAstParser&type=Date)](https://star-history.com/#OxenFxc/LuaAstParser&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=OxenFxc/lua-ast-parser&type=Date)](https://star-history.com/#OxenFxc/lua-ast-parser&Date)
 
 </div>
 
@@ -354,14 +354,14 @@ end
 
 Contributions are welcome! Check out our contribution guidelines:
 
-- 🐛 [Report Issues](https://github.com/OxenFxc/LuaAstParser/issues)
-- 💡 [Suggest Features](https://github.com/OxenFxc/LuaAstParser/discussions)
-- 🔧 [Submit PRs](https://github.com/OxenFxc/LuaAstParser/pulls)
+- 🐛 [Report Issues](https://github.com/OxenFxc/lua-ast-parser/issues)
+- 💡 [Suggest Features](https://github.com/OxenFxc/lua-ast-parser/discussions)
+- 🔧 [Submit PRs](https://github.com/OxenFxc/lua-ast-parser/pulls)
 
 ### 📞 Contact Us
 
 - 🏠 [GitHub Profile](https://github.com/OxenFxc)
-- 📧 [Project Home](https://github.com/OxenFxc/LuaAstParser)
+- 📧 [Project Home](https://github.com/OxenFxc/lua-ast-parser)
 - 🎯 QQ: 1434436108 | 2707271920
 - 💬 WeChat: ofxfxc
 
@@ -375,6 +375,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **🌟 If this project helps you, please give it a ⭐ Star!**
 
-[![Star History Chart](https://api.star-history.com/svg?repos=OxenFxc/LuaAstParser&type=Date)](https://star-history.com/#OxenFxc/LuaAstParser&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=OxenFxc/lua-ast-parser&type=Date)](https://star-history.com/#OxenFxc/lua-ast-parser&Date)
 
 </div>
