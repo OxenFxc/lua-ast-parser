@@ -3,7 +3,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/OxenFxc/lua-ast-parser?style=social)](https://github.com/OxenFxc/lua-ast-parser)
 [![GitHub forks](https://img.shields.io/github/forks/OxenFxc/lua-ast-parser?style=social)](https://github.com/OxenFxc/lua-ast-parser)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Lua Version](https://img.shields.io/badge/Lua-5.1%2B-blue.svg)](https://www.lua.org/)
+[![Lua Version](https://img.shields.io/badge/Lua-5.3%2B-blue.svg)](https://www.lua.org/)
 
 🌟 **纯Lua实现的AST解析器** | 🤖 **支持语法扩展** | 📖 **中英文文档**
 
@@ -378,3 +378,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 [![Star History Chart](https://api.star-history.com/svg?repos=OxenFxc/lua-ast-parser&type=Date)](https://star-history.com/#OxenFxc/lua-ast-parser&Date)
 
 </div>
+
