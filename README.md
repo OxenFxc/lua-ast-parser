@@ -1,37 +1,37 @@
-# 🚀 LuaAstParser
+# LuaAstParser
 
 [![GitHub stars](https://img.shields.io/github/stars/OxenFxc/lua-ast-parser?style=social)](https://github.com/OxenFxc/lua-ast-parser)
 [![GitHub forks](https://img.shields.io/github/forks/OxenFxc/lua-ast-parser?style=social)](https://github.com/OxenFxc/lua-ast-parser)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Lua Version](https://img.shields.io/badge/Lua-5.1%2B-blue.svg)](https://www.lua.org/)
 
-🌟 **纯Lua实现的AST解析器** | 🤖 **支持语法扩展** | 📖 **中英文文档**
+**纯Lua实现的AST解析器** |  **可自行语法扩展**
 
-[English](#english) | [中文](#中文) | [📖 文档](#项目结构) | [🎮 快速开始](#快速开始)
+[English](#english) | [中文](#中文) | [ 文档](#项目结构) | [ 快速开始](#快速开始)
 
 ---
 
 ## 中文
 
-一个用纯 Lua 实现的完整 Lua 解析器，支持从 Lua 源码到 AST 的转换、AST 到 Lua 源码的打印，以及 AST 的解释执行。
+一个用纯 Lua 实现的完整 Lua 解析器，支持从 Lua 源码到 AST 的转换、AST 到 Lua 源码的打印，以及 AST 的解释执行
 
-### ✨ 功能特性
+###  特性
 
-- 🎯 **完整的词法分析器**：支持所有 Lua 标记类型，包括关键字、标识符、字面量等
-- 🔍 **递归下降语法分析器**：实现完整的 Lua 语法解析，支持表达式和语句
-- 🌳 **AST 构建**：构建结构化的抽象语法树，支持访问者模式
-- 🖨️ **代码打印器**：将 AST 转换为格式化的 Lua 源码
-- ⚡ **AST 解释器**：纯 Lua 实现的 AST 执行引擎，支持大部分 Lua 特性
-- 🔌 **插件系统**：可扩展的插件架构，支持自定义语法和功能
-- 🩺 **诊断系统**：完整的错误诊断和位置追踪
-- 🧰 **工具库**：丰富的字符串、表格、位置处理工具
+-  **较完整的词法分析器**：支持所有 Lua 标记类型，包括关键字、标识符、字面量等
+-  **递归下降语法分析器**：实现完整的 Lua 语法解析，支持表达式和语句
+-  **AST 构建**：构建结构化的抽象语法树，支持访问者模式
+-  **代码打印器(反序列化)**：将 AST 转换为格式化的 Lua 源码(也就是python那个luaast的lua渲染器)
+-  **AST 解释器**：纯 Lua 实现的 AST 执行引擎，支持大部分 Lua 特性
+-  **插件系统**：可扩展的插件架构，支持自定义语法和功能(不过就是不咋好弄)
+-  **诊断系统**：错误追踪和错误位置追踪
+-  **工具箱**：字符串、表格、位置处理工具
 
-### 🎮 特色功能
+###  特色
 
-- 🔥 **零依赖**：纯Lua实现，无需外部依赖
-- 🚀 **高性能**：优化的解析算法，支持大型代码文件
-- 🎨 **易扩展**：插件系统让定制变得简单有趣
-- 📱 **跨平台**：支持所有Lua运行环境
+-  **零依赖**：纯Lua实现，无需外部依赖
+-  **牛逼高性能**：优化的解析算法，支持大型代码文件
+-  **超级牛逼易扩展**：插件系统让定制变得简单有趣
+-  **跨平台**：支持所有Lua运行环境(排除魔改的)
 
 ### 项目结构
 
@@ -69,53 +69,53 @@ lua/
 └── plugins.lua       # 插件管理器
 ```
 
-### 🎮 快速开始
+###  快速开始
 
-#### 🚀 基本使用
+####  基本使用
 
 ```lua
 local luaparser = require("lua")
 
--- 📝 解析 Lua 源码为 AST
+--  解析 Lua 源码为 AST
 local success, result = luaparser.parse_lua("print('Hello, World!')")
 if success then
     local ast = result
-    print("✨ 解析成功")
+    print("解析成功")
 end
 
--- 🖨️ 将 AST 转换为 Lua 源码
+--  将 AST 转换为 Lua 源码
 local success, result = luaparser.print_lua(ast)
 if success then
     local code = result.code
     print(code)  -- 输出: print('Hello, World!')
 end
 
--- ⚡ 解释执行 AST
+-- 解释执行 AST
 local success, result = luaparser.interpret_lua(ast)
 if success then
-    print("🎯 执行结果:", result)
+    print("执行结果:", result)
 end
 ```
 
-#### 🔌 插件系统
+#### 插件系统
 
 ```lua
--- 🎨 注册自定义插件
+-- 注册自定义插件
 local my_plugin = {
     name = "my_plugin",
     version = "1.0.0",
     description = "My custom plugin",
 
     init = function(config)
-        print("🚀 Plugin initialized")
+        print("Plugin initialized")
     end,
 
     extend_lexer = function(lexer)
-        -- 🔤 扩展词法器
+        -- 扩展词法器
     end,
 
     extend_parser = function(parser)
-        -- 📊 扩展语法器
+        -- 扩展语法器
     end
 }
 
@@ -123,10 +123,10 @@ luaparser.register_plugin(my_plugin)
 luaparser.load_plugin("my_plugin")
 ```
 
-#### 🎪 趣味示例
+#### 示例
 
 ```lua
--- 🌟 解析并执行一个有趣的表达式
+-- 解析并执行一个表达式
 local code = [[
     local result = {}
     for i = 1, 10 do
@@ -139,35 +139,32 @@ local success, ast = luaparser.parse_lua(code)
 if success then
     local success, result = luaparser.interpret_lua(ast)
     if success then
-        print("🎲 计算结果:", table.concat(result, ", "))
+        print("计算结果:", table.concat(result, ", "))
     end
 end
 ```
 
-### 📚 API 文档
+### API 文档
 
-#### ⚙️ 核心函数
+#### 核心函数
 
-- `📝 parse_lua(source, options)` - 解析 Lua 源码为 AST
-- `🖨️ print_lua(ast, options)` - 将 AST 转换为 Lua 源码
-- `⚡ interpret_lua(ast, options)` - 解释执行 AST
+- `parse_lua(source, options)` - 解析 Lua 源码为 AST
+- `print_lua(ast, options)` - 将 AST 转换为 Lua 源码
+- `interpret_lua(ast, options)` - 解释执行 AST
 
-#### 🔧 高级函数
+#### 比较高级de牛逼函数
 
-- `🏗️ create_parser(config)` - 创建新的解析器实例
-- `📊 create_plugin_manager()` - 创建插件管理器
+- `create_parser(config)` - 创建新的解析器实例
+- `create_plugin_manager()` - 创建插件管理器
 
-#### 🔌 插件 API
+#### 插件 API
 
-- `➕ register_plugin(plugin)` - 注册插件
-- `📥 load_plugin(name, config)` - 加载插件
-- `📤 unload_plugin(name)` - 卸载插件
-- `🔍 get_plugin(name)` - 获取插件实例
-- `📋 get_registered_plugins()` - 获取已注册插件列表
+- `register_plugin(plugin)` - 注册插件
+- `load_plugin(name, config)` - 加载插件
+- `unload_plugin(name)` - 卸载插件
+- `get_plugin(name)` - 获取插件实例
+- `get_registered_plugins()` - 获取已注册插件列表
 
-### 🤝 贡献
-
-欢迎贡献代码！请查看我们的贡献指南：
 
 - 🐛 [报告问题](https://github.com/OxenFxc/lua-ast-parser/issues)
 - 💡 [提出建议](https://github.com/OxenFxc/lua-ast-parser/discussions)
@@ -175,20 +172,20 @@ end
 
 ### 📞 联系我们
 
-- 🏠 [GitHub主页](https://github.com/OxenFxc)
-- 📧 [作者主页](https://github.com/OxenFxc/lua-ast-parser)
-- 🎯 QQ: 1434436108 | 2707271920
-- 💬 WeChat: ofxfxc
+- [GitHub主页](https://github.com/OxenFxc)
+- [作者主页](https://github.com/OxenFxc/lua-ast-parser)
+- QQ: 1434436108 | 2707271920
+- WeChat: ofxfxc
 
-### 📄 许可证
+### 许可证
 
-本项目采用 MIT 许可证 - 详见 [LICENSE](LICENSE) 文件
+ MIT 许可证 - 详见 [LICENSE](LICENSE) 文件
 
 ---
 
 <div align="center">
 
-**🌟 如果这个项目对你有帮助，请给它一个 ⭐ Star！**
+**如果这个项目对你有帮助，请给它一个 Star！**
 
 [![Star History Chart](https://api.star-history.com/svg?repos=OxenFxc/lua-ast-parser&type=Date)](https://star-history.com/#OxenFxc/lua-ast-parser&Date)
 
@@ -200,23 +197,23 @@ end
 
 A complete Lua parser implemented in pure Lua, supporting conversion from Lua source code to AST, AST to Lua source code printing, and AST interpretation execution.
 
-### ✨ Features
+### Features
 
-- 🎯 **Complete Lexer**: Supports all Lua token types, including keywords, identifiers, literals, etc.
-- 🔍 **Recursive Descent Parser**: Implements complete Lua syntax parsing, supporting expressions and statements
-- 🌳 **AST Construction**: Builds structured abstract syntax trees, supports visitor pattern
-- 🖨️ **Code Printer**: Converts AST to formatted Lua source code
-- ⚡ **AST Interpreter**: Pure Lua implementation of AST execution engine, supports most Lua features
-- 🔌 **Plugin System**: Extensible plugin architecture, supports custom syntax and functionality
-- 🩺 **Diagnostics System**: Complete error diagnostics and position tracking
-- 🧰 **Utility Library**: Rich string, table, and position handling utilities
+- **Complete Lexer**: Supports all Lua token types, including keywords, identifiers, literals, etc.
+-  **Recursive Descent Parser**: Implements complete Lua syntax parsing, supporting expressions and statements
+-  **AST Construction**: Builds structured abstract syntax trees, supports visitor pattern
+-  **Code Printer**: Converts AST to formatted Lua source code
+-  **AST Interpreter**: Pure Lua implementation of AST execution engine, supports most Lua features
+-  **Plugin System**: Extensible plugin architecture, supports custom syntax and functionality
+-  **Diagnostics System**: Complete error diagnostics and position tracking
+-  **Utility Library**: Rich string, table, and position handling utilities
 
-### 🎮 Special Features
+### Special Features
 
-- 🔥 **Zero Dependencies**: Pure Lua implementation, no external dependencies required
-- 🚀 **High Performance**: Optimized parsing algorithms, supports large code files
-- 🎨 **Easy to Extend**: Plugin system makes customization simple and fun
-- 📱 **Cross-platform**: Supports all Lua runtime environments
+-  **Zero Dependencies**: Pure Lua implementation, no external dependencies required
+-  **High Performance**: Optimized parsing algorithms, supports large code files
+-  **Easy to Extend**: Plugin system makes customization simple and fun
+-  **Cross-platform**: Supports all Lua runtime environments
 
 ### Project Structure
 
@@ -256,51 +253,51 @@ lua/
 
 ### Quick Start
 
-#### 🚀 Basic Usage
+####  Basic Usage
 
 ```lua
 local luaparser = require("lua")
 
--- 📝 Parse Lua source code to AST
+-- Parse Lua source code to AST
 local success, result = luaparser.parse_lua("print('Hello, World!')")
 if success then
     local ast = result
-    print("✨ Parse successful")
+    print("Parse successful")
 end
 
--- 🖨️ Convert AST to Lua source code
+--  Convert AST to Lua source code
 local success, result = luaparser.print_lua(ast)
 if success then
     local code = result.code
     print(code)  -- Output: print('Hello, World!')
 end
 
--- ⚡ Interpret and execute AST
+--  Interpret and execute AST
 local success, result = luaparser.interpret_lua(ast)
 if success then
-    print("🎯 Execution result:", result)
+    print("Execution result:", result)
 end
 ```
 
-#### 🔌 Plugin System
+####  Plugin System
 
 ```lua
--- 🎨 Register custom plugin
+-- Register custom plugin
 local my_plugin = {
     name = "my_plugin",
     version = "1.0.0",
     description = "My custom plugin",
 
     init = function(config)
-        print("🚀 Plugin initialized")
+        print("Plugin initialized")
     end,
 
     extend_lexer = function(lexer)
-        -- 🔤 Extend lexer
+        -- Extend lexer
     end,
 
     extend_parser = function(parser)
-        -- 📊 Extend parser
+        -- Extend parser
     end
 }
 
@@ -308,10 +305,10 @@ luaparser.register_plugin(my_plugin)
 luaparser.load_plugin("my_plugin")
 ```
 
-#### 🎪 Fun Example
+#### Example
 
 ```lua
--- 🌟 Parse and execute an interesting expression
+-- Parse and execute an interesting expression
 local code = [[
     local result = {}
     for i = 1, 10 do
@@ -324,48 +321,48 @@ local success, ast = luaparser.parse_lua(code)
 if success then
     local success, result = luaparser.interpret_lua(ast)
     if success then
-        print("🎲 Calculation result:", table.concat(result, ", "))
+        print("Calculation result:", table.concat(result, ", "))
     end
 end
 ```
 
-### 📚 API Documentation
+### API Documentation
 
-#### ⚙️ Core Functions
+#### Core Functions
 
-- `📝 parse_lua(source, options)` - Parse Lua source code to AST
-- `🖨️ print_lua(ast, options)` - Convert AST to Lua source code
-- `⚡ interpret_lua(ast, options)` - Interpret and execute AST
+- `parse_lua(source, options)` - Parse Lua source code to AST
+- `print_lua(ast, options)` - Convert AST to Lua source code
+- `interpret_lua(ast, options)` - Interpret and execute AST
 
-#### 🔧 Advanced Functions
+#### 🔧 Advance Functions
 
-- `🏗️ create_parser(config)` - Create new parser instance
-- `📊 create_plugin_manager()` - Create plugin manager
+- `create_parser(config)` - Create new parser instance
+- `create_plugin_manager()` - Create plugin manager
 
-#### 🔌 Plugin API
+#### Plugin API
 
-- `➕ register_plugin(plugin)` - Register plugin
-- `📥 load_plugin(name, config)` - Load plugin
-- `📤 unload_plugin(name)` - Unload plugin
-- `🔍 get_plugin(name)` - Get plugin instance
-- `📋 get_registered_plugins()` - Get registered plugins list
+- `register_plugin(plugin)` - Register plugin
+- `load_plugin(name, config)` - Load plugin
+- `unload_plugin(name)` - Unload plugin
+- `get_plugin(name)` - Get plugin instance
+- `get_registered_plugins()` - Get registered plugins list
 
-### 🤝 Contributing
+### Contributing
 
 Contributions are welcome! Check out our contribution guidelines:
 
-- 🐛 [Report Issues](https://github.com/OxenFxc/lua-ast-parser/issues)
-- 💡 [Suggest Features](https://github.com/OxenFxc/lua-ast-parser/discussions)
-- 🔧 [Submit PRs](https://github.com/OxenFxc/lua-ast-parser/pulls)
+- [Report Issues](https://github.com/OxenFxc/lua-ast-parser/issues)
+- [Suggest Features](https://github.com/OxenFxc/lua-ast-parser/discussions)
+- [Submit PRs](https://github.com/OxenFxc/lua-ast-parser/pulls)
 
-### 📞 Contact Us
+### Contact Us
 
-- 🏠 [GitHub Profile](https://github.com/OxenFxc)
-- 📧 [Project Home](https://github.com/OxenFxc/lua-ast-parser)
-- 🎯 QQ: 1434436108 | 2707271920
-- 💬 WeChat: ofxfxc
+- [GitHub Profile](https://github.com/OxenFxc)
+- [Project Home](https://github.com/OxenFxc/lua-ast-parser)
+- QQ: 1434436108 | 2707271920
+- WeChat: ofxfxc
 
-### 📄 License
+### License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
@@ -373,10 +370,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
 
-**🌟 If this project helps you, please give it a ⭐ Star!**
+** If this project helps you, please give it a Star**
 
 [![Star History Chart](https://api.star-history.com/svg?repos=OxenFxc/lua-ast-parser&type=Date)](https://star-history.com/#OxenFxc/lua-ast-parser&Date)
 
 </div>
+
 
 
