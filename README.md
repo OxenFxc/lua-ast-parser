@@ -166,11 +166,11 @@ end
 - `get_registered_plugins()` - 获取已注册插件列表
 
 
-- 🐛 [报告问题](https://github.com/OxenFxc/lua-ast-parser/issues)
-- 💡 [提出建议](https://github.com/OxenFxc/lua-ast-parser/discussions)
-- 🔧 [提交PR](https://github.com/OxenFxc/lua-ast-parser/pulls)
+- [报告问题](https://github.com/OxenFxc/lua-ast-parser/issues)
+- [提出建议](https://github.com/OxenFxc/lua-ast-parser/discussions)
+- [提交PR](https://github.com/OxenFxc/lua-ast-parser/pulls)
 
-### 📞 联系我们
+### 联系我
 
 - [GitHub主页](https://github.com/OxenFxc)
 - [作者主页](https://github.com/OxenFxc/lua-ast-parser)
@@ -375,6 +375,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 [![Star History Chart](https://api.star-history.com/svg?repos=OxenFxc/lua-ast-parser&type=Date)](https://star-history.com/#OxenFxc/lua-ast-parser&Date)
 
 </div>
+
 
 
 
